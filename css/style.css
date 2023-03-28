@@ -8,17 +8,18 @@
     ou seja, foram reaproveitados em todas as páginas. */
 
 body {
+    height: 100%;
     font-family: 'Source Sans Pro', 'sans-serif';
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: radial-gradient(circle at 82.86% 89.16%, #eafff8 0, #dcfcf0 25%, #cdf2e6 50%, #bde8dd 75%, #afe0d6 100%);
+    background-image: linear-gradient(to right bottom, #051937, #00486d, #007b8b, #00ae88, #92dc72);
 }
 
 .container {
-    margin: 50px auto;
+    margin: 80px auto;
     width: 70%;
-    background-color: rgba(83, 88, 90, 0.15);
+    background-color: rgba(83, 88, 90, 0.45);
     border-radius: 15px;
     position: relative;
 }
@@ -47,7 +48,7 @@ body {
 }
 
 .destaque-titulo-topo {
-    color: #7691c4;
+    color: #0b638f;
 }
 
 .box-links-topo {
@@ -79,7 +80,7 @@ body {
 }
 
 .link-topo:hover {
-    color: #7691c8;
+    color: #0b638f;
 } /* Fim da estilização da seção topo */
 
 
@@ -94,7 +95,7 @@ body {
     font-size: 28px;
     font-weight: 600;
     margin-bottom: 30px;
-    color: #777171;
+    color: #fff;
 }
 
 .paragrafo-apresentacao {
@@ -103,7 +104,7 @@ body {
     font-weight: 400;
     line-height: 36px;
     margin-bottom: 30px;
-    color: #777171;
+    color: #fff;
 } /* Fim da estilização do corpo da página */
 
 
@@ -112,17 +113,18 @@ footer { /* Estilos do rodapé da página */
     padding: 8px;
     text-align: center;
     position: absolute;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255, 0.95);
     bottom: 0;
     border-bottom: 2px solid rgba(204, 201, 201, 0.35);
 }
 
 footer p {
     color: #777171;
+    font-weight: 500;
 }
 
 footer span {
-    color: #7691c4
+    color: #0b638f
 } /* Fim da estilização do rodapé da página */
 
 
@@ -134,11 +136,12 @@ footer span {
     cursor: pointer;
     border-radius: 5px;
     background-color: #fff;
-    color: #777171;
+    color: #076fa3;
 }
 
 .btn-iniciar:hover {
-    background-color: #7691c8;
+    background-color: #0b638f;
+    border: 1px solid #076fa3;
     color: #fff;
     transition: 0.3s;
 }
@@ -151,5 +154,19 @@ footer span {
     font-weight: 400;
     line-height: 36px;
     margin-bottom: 30px;
-    color: #777171;
+    color: #fff;
+}
+
+.result { /* Estilo utilizado para o parágrafo que mostra o resultado após os cálculos realizados no programa */
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.result span {
+    font-weight: 900;
+    color: #051937;
 }

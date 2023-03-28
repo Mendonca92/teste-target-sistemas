@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/questao2.js"></script>
+    <script src="js/script-questao2.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -27,7 +27,7 @@
             <section class="apresentacao">
                 <h2 class="titulo-apresentacao">QUESTÃO 02</h2>
 
-                <p class="paragrafo-apresentacao">
+                <p class="paragrafo-apresentacao" id="saida">
                     Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor 
                     sempre será a soma dos 2 valores anteriores 
                     (exemplo: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...), 
@@ -36,7 +36,7 @@
                     número informado pertence ou não a sequência.
                 </p>
 
-                <button class="btn-iniciar" onclick="calcular('questao2')">
+                <button class="btn-iniciar" onclick="calcular()">
 <!--TALVEZ TENTAR DESTA FORMA COM APENAS UM ARQUIVO JS USANDO SWITCH PARA SABER QUAL FÓRMULA CALCULAR-->
                     Clique para começar
                 </button>
